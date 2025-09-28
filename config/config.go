@@ -64,7 +64,7 @@ func Init() (string, string, error) {
 		utils.HandleError(os.MkdirAll(ClipseConfig.TempDirPath, 0755))
 	}
 
-	return ClipseConfig.LogFilePath, DisplayServer(), nil
+	return ClipseConfig.LogFilePath, utils.DisplayServer(), nil
 }
 
 func loadConfig(configPath string) {
